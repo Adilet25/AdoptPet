@@ -20,9 +20,9 @@ const MainRoutes = () => {
   return (
     <div>
       <Routes>
-        {ALL_PAGES.map((item) => {
-          <Route path={item.link} element={item.element} key={item.id} />;
-        })}
+        {ALL_PAGES.map((item) => (
+          <Route path={item.link} element={item.element} key={item.id} />
+        ))}
       </Routes>
     </div>
   );
