@@ -1,7 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
-  return <div className="">faflawnflwanfnlawfle</div>;
+  
+  const navigate = useNavigate()
+
+  return <div>
+    <a href="" onClick={() => navigate('/register')}>Sign Up</a>
+  </div>
 };
 
 export default HomePage;

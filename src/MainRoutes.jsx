@@ -1,5 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import Login from "./components/Layout/MainLayout/Login";
+import Register from "./components/Layout/MainLayout/Register";
 import HomePage from "./pages/HomePage";
 
 const MainRoutes = () => {
@@ -8,13 +10,28 @@ const MainRoutes = () => {
     {
       //? адрес ссылки
       link: "/",
+      
 
       //? компонент страницы
       element: <HomePage />,
+      
 
       //? идент. номер для страниц
       id: 1,
+ 
     },
+    
+    {
+      link: '/register',
+      element: <Register/>,
+      id: 2,
+    },
+
+    {
+      link: '/login',
+      element: <Login/>,
+      id: 3,
+    }
   ];
 
   return (
