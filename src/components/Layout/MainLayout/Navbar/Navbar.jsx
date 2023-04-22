@@ -167,85 +167,90 @@ export default function PrimarySearchAppBar() {
   );
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar
-        style={{ border: "none", boxShadow: "none" }}
-        className="bg-inherit"
-        color=""
-        position="static">
-        <Toolbar>
-          {/* <Typography
+    <div className="container mx-auto p-4">
+      <Box sx={{ flexGrow: 1 }}>
+        <AppBar
+          style={{ border: "none", boxShadow: "none" }}
+          className="bg-inherit"
+          color=""
+          position="static">
+          <Toolbar>
+            {/* <Typography
             variant="h6"
             noWrap
             component="div"
-            sx={{ display: { xs: "none", sm: "block" } }}> */}
-          <img
-            src={Logo}
-            alt=""
-            className="w-[15vmax]"
-            onClick={() => navigate("/")}
-          />
-          {/* </Typography> */}
-          <Box sx={{ flexGrow: 1 }} />
-          <Search>
-            <SearchIconWrapper>
-              <img src={SearchCat} alt="" />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Бульдог белый…"
-              inputProps={{ "aria-label": "search" }}
+          sx={{ display: { xs: "none", sm: "block" } }}> */}
+            <img
+              src={Logo}
+              alt=""
+              className="w-[15vmax]"
+              onClick={() => navigate("/")}
             />
-            <SearchIconWrapper>
-              <img
-                // className="flex self-end w-4 h-4 cursor-pointer"
-                src={Filter}
-                alt=""
+            {/* </Typography> */}
+            <Box sx={{ flexGrow: 1 }} />
+            <Search>
+              <SearchIconWrapper>
+                <img src={SearchCat} alt="" />
+              </SearchIconWrapper>
+              <StyledInputBase
+                placeholder="Бульдог белый…"
+                inputProps={{ "aria-label": "search" }}
               />
-            </SearchIconWrapper>
-          </Search>
-          <Box
-            sx={{ display: { xs: "none", md: "flex" }, alignItems: "center" }}>
-            <IconButton size="large" aria-label="show 4 new mails">
-              {/* <Badge badgeContent={0} color="error"> */}
-              <img src={Mail} alt="" />
-              {/* </Badge> */}
-            </IconButton>
-            <IconButton
-              size="large"
-              aria-label="show 17 new notifications"
-              color="inherit">
-              {/* <Badge badgeContent={0} color="error"> */}
-              {/* <div className="w-9 h-9 bg-orange-400 rounded-full "> */}
-              <img className="mx-auto" src={PetHand} alt="" />
-              {/* </div> */}
-              {/* </Badge> */}
-            </IconButton>
-            <IconButton
-              size="large"
-              edge="end"
-              aria-label="account of current user"
-              aria-controls={menuId}
-              aria-haspopup="true"
-              onClick={handleProfileMenuOpen}
-              color="inherit">
-              <img src={Profile} alt="" />
-            </IconButton>
-          </Box>
-          <Box sx={{ display: { xs: "flex", md: "none" } }}>
-            <IconButton
-              size="large"
-              aria-label="show more"
-              aria-controls={mobileMenuId}
-              aria-haspopup="true"
-              onClick={handleMobileMenuOpen}
-              color="inherit">
-              <MoreIcon />
-            </IconButton>
-          </Box>
-        </Toolbar>
-      </AppBar>
-      {renderMobileMenu}
-      {renderMenu}
-    </Box>
+              <SearchIconWrapper>
+                <img
+                  // className="flex self-end w-4 h-4 cursor-pointer"
+                  src={Filter}
+                  alt=""
+                />
+              </SearchIconWrapper>
+            </Search>
+            <Box
+              sx={{
+                display: { xs: "none", md: "flex" },
+                alignItems: "center",
+              }}>
+              <IconButton size="large" aria-label="show 4 new mails">
+                {/* <Badge badgeContent={0} color="error"> */}
+                <img src={Mail} alt="" />
+                {/* </Badge> */}
+              </IconButton>
+              <IconButton
+                size="large"
+                aria-label="show 17 new notifications"
+                color="inherit">
+                {/* <Badge badgeContent={0} color="error"> */}
+                {/* <div className="w-9 h-9 bg-orange-400 rounded-full "> */}
+                <img className="mx-auto" src={PetHand} alt="" />
+                {/* </div> */}
+                {/* </Badge> */}
+              </IconButton>
+              <IconButton
+                size="large"
+                edge="end"
+                aria-label="account of current user"
+                aria-controls={menuId}
+                aria-haspopup="true"
+                onClick={handleProfileMenuOpen}
+                color="inherit">
+                <img src={Profile} alt="" />
+              </IconButton>
+            </Box>
+            <Box sx={{ display: { xs: "flex", md: "none" } }}>
+              <IconButton
+                size="large"
+                aria-label="show more"
+                aria-controls={mobileMenuId}
+                aria-haspopup="true"
+                onClick={handleMobileMenuOpen}
+                color="inherit">
+                <MoreIcon />
+              </IconButton>
+            </Box>
+          </Toolbar>
+        </AppBar>
+        {renderMobileMenu}
+        {renderMenu}
+      </Box>
+    </div>
   );
 }

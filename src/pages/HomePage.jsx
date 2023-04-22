@@ -6,7 +6,7 @@ import Card from "../components/Layout/MainLayout/Card/Card";
 const HomePage = () => {
   const navigate = useNavigate();
   return (
-    <div>
+    <div className="container mx-auto p-8">
       <HomeCategory />
       <Card />
     </div>
