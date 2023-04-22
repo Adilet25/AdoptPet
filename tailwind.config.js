@@ -16,6 +16,9 @@ module.exports = {
         black2: "#111",
         // add new styles like this you know
       },
+      margin: {
+        big: "540px",
+      },
       width: {},
       height: {},
       outlineWidth: {},
