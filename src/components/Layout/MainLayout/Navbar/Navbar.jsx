@@ -163,7 +163,11 @@ export default function PrimarySearchAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar className="bg-inherit" color="" position="static">
+      <AppBar
+        style={{ border: "none", boxShadow: "none" }}
+        className="bg-inherit"
+        color=""
+        position="static">
         <Toolbar>
           <Typography
             variant="h6"
