@@ -33,6 +33,9 @@ module.exports = {
       scale: {
         mirror: "-1",
       },
+      margin: {
+        big: "540px",
+      },
       width: {},
       height: {},
       outlineWidth: {},
