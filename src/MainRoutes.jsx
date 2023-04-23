@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Login from "./components/Layout/MainLayout/Login";
 import Register from "./components/Layout/MainLayout/Register";
 import HomePage from "./pages/HomePage";
+import AddProduct from "./components/AddProduct/AddProduct";
 
 const MainRoutes = () => {
   //! Сюда добавлять ссылки на страницы
@@ -10,28 +11,30 @@ const MainRoutes = () => {
     {
       //? адрес ссылки
       link: "/",
-      
 
       //? компонент страницы
       element: <HomePage />,
-      
 
       //? идент. номер для страниц
       id: 1,
- 
     },
-    
+
     {
-      link: '/register',
-      element: <Register/>,
+      link: "/register",
+      element: <Register />,
       id: 2,
     },
 
     {
-      link: '/login',
-      element: <Login/>,
+      link: "/login",
+      element: <Login />,
       id: 3,
-    }
+    },
+    {
+      link: "/add",
+      element: <AddProduct />,
+      id: 4,
+    },
   ];
 
   return (

@@ -22,7 +22,7 @@ import "../HomeCategory/mapbtn.css";
 
 const HomeCategory = () => {
   return (
-    <div>
+    <div className="container mx-auto px-8 py-2">
       <div className="flex flex-row items-center">
         <button className="bg-d1 text-white flex flex-row items-center justify-between w-52 h-11 rounded-3xl px-12 drop-shadow-jbtn ">
           <img src={anmlogo} alt="" />

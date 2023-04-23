@@ -19,6 +19,7 @@ module.exports = {
         // add new styles like this you know
       },
       dropShadow: {
+        block: ["0px 0px 15px #f1f1f1"],
         jbtn: ["0px 0px 12px #6c6c6c"],
         btnsh: ["0px 0px 12px #C7C7C7"],
         ybtn: ["0px 0px 12px #F6E657"],

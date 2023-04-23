@@ -167,11 +167,11 @@ export default function PrimarySearchAppBar() {
   );
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 ">
       <Box sx={{ flexGrow: 1 }}>
         <AppBar
           style={{ border: "none", boxShadow: "none" }}
-          className="bg-inherit"
+          className="bg-[#f4f4f4]"
           color=""
           position="static">
           <Toolbar>

@@ -9,7 +9,10 @@ import test from "../../../../assets/test-picture.jpg";
 import Mail from "../../../../assets/mail.png";
 import Price from "../../../../assets/price.png";
 
-export default function ImgMediaCard() {
+export default function ImgMediaCard({ key, item }) {
+  React.useEffect(() => {
+    console.log(item);
+  }, []);
   return (
     <Card
       style={{ border: "none", boxShadow: "none" }}
@@ -24,7 +27,7 @@ export default function ImgMediaCard() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lorem.
+          lflflfl
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
