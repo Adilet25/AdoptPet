@@ -19,8 +19,10 @@ import htlbtn from "../../assets/Untitled (Copy) (1)/Mask group.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "../HomeCategory/mapbtn.css";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const HomeCategory = () => {
+  const navigate = useNavigate("");
   return (
     <div className="container mx-auto px-8 py-2">
       <div className="flex flex-row items-center">
@@ -127,6 +129,7 @@ const HomeCategory = () => {
       <div className="flex flex-row items-center">
         <button
           //   className="text-white flex flex-row items-center justify-between w-52 h-11 rounded-3xl px-12 drop-shadow-btnsh  hover:drop-shadow-ybtn"
+          onClick={() => navigate("/map")}
           className="mapbtnstyle font-bold flex flex-row items-center justify-between w-52 h-11 rounded-3xl px-12 drop-shadow-btnsh ">
           <img src={gpslogo} alt="" className="w-8" />
           КАТАЛОГ

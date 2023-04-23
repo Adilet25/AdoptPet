@@ -4,6 +4,7 @@ import Login from "./components/Layout/MainLayout/Login";
 import Register from "./components/Layout/MainLayout/Register";
 import HomePage from "./pages/HomePage";
 import AddProduct from "./components/AddProduct/AddProduct";
+import MapSection from "./components/MapSection/MapSection";
 
 const MainRoutes = () => {
   //! Сюда добавлять ссылки на страницы
@@ -34,6 +35,11 @@ const MainRoutes = () => {
       link: "/add",
       element: <AddProduct />,
       id: 4,
+    },
+    {
+      link: "/map",
+      element: <MapSection />,
+      id: 5,
     },
   ];
 
