@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useReducer, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const API = 'https://zoonet.onrender.com/api/v1'
@@ -8,6 +8,8 @@ export const authContext = createContext()
 export const useAuth = () => useContext(authContext)
 
 const AuthContextProvider = ({children}) => {
+    
+    
 
     const navigate = useNavigate()
 
@@ -19,7 +21,7 @@ const AuthContextProvider = ({children}) => {
             const res = await axios.post(`${API}/account/register/`, formData)
             localStorage.setItem('name', name)
             setUser(name)
-            navigate('/')
+            // navigate('/')
             console.log(res); 
         } catch (error) {
             console.log(error);
@@ -58,7 +60,7 @@ const AuthContextProvider = ({children}) => {
             }));
             const name = localStorage.getItem('name')
             setUser(name);
-
+            
         } catch (error) {
             console.log(error);
             handleLogout()
