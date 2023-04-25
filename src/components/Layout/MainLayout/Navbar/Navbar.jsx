@@ -78,6 +78,7 @@ export default function PrimarySearchAppBar() {
 
   const handleProfileMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
+    navigate("/login");
   };
 
   const handleMobileMenuClose = () => {
