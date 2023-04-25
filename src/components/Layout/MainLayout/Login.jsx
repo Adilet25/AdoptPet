@@ -1,3 +1,4 @@
+import { TextField } from '@mui/material';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../../contexts/AuthContextProvider';
@@ -27,8 +28,14 @@ const Login = () => {
     return (
         <div>
             <form action="submit" onSubmit={handleSave}>
-                <input onChange={(e) => setName(e.target.value)} type="text" placeholder='Name' />
-                <input onChange={(e) => setPassword(e.target.value)} type="password" placeholder='password' />
+            <TextField
+                label='Ваше имя'
+                onChange={(e) => setName(e.target.value)} type="text"
+                />
+                 <TextField
+                label='Пароль'
+                onChange={(e) => setPassword(e.target.value)} type="password"
+                />
                 <button>Sign in</button>
             </form>
             <a href="#" onClick={() => navigate('/register')}>Don't have account? Register here</a>

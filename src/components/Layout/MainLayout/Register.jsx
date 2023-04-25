@@ -48,7 +48,7 @@ const Register = () => {
                 />
                 <TextField
                 label='Электронная почта'
-                onChange={(e) => setName(e.target.value)} type="email"
+                onChange={(e) => setEmail(e.target.value)} type="email"
                 />
                 <span className='phone'>
                 <PhoneInput
