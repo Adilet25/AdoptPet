@@ -1,7 +1,8 @@
 import { TextField } from '@mui/material';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../../../contexts/AuthContextProvider';
+import { useAuth } from '../../../../contexts/AuthContextProvider';
+import logo from "../Authorization/auth-image/zoonet-logo.png"
 
 const Login = () => {
 
@@ -26,7 +27,10 @@ const Login = () => {
     }
 
     return (
-        <div>
+        <div className='login-container'>
+             <img className='login-icon' src={logo} alt="" />
+            <span className='login-title'>Войти</span>
+
             <form action="submit" onSubmit={handleSave}>
             <TextField
                 label='Ваше имя'
@@ -36,9 +40,10 @@ const Login = () => {
                 label='Пароль'
                 onChange={(e) => setPassword(e.target.value)} type="password"
                 />
-                <button>Sign in</button>
+                <button>ВОЙТИ</button>
             </form>
-            <a href="#" onClick={() => navigate('/register')}>Don't have account? Register here</a>
+            <span>Нет аккаунта?</span>
+            <a href="#" onClick={() => navigate('/register')}>Регистрация</a>
         </div>
     );
 };
