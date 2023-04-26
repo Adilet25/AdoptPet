@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import OTPInput from "react-otp-input";
 import OTPInput from "react-otp-input";
 import PhoneInput from "react-phone-input-2";
 import { useNavigate } from "react-router-dom";
