@@ -44,7 +44,7 @@ const Login = () => {
               onChange={(e) => setPassword(e.target.value)}
               type="password"
             />
-            <button>ВОЙТИ</button>
+            <button onClick={() => navigate("/")}>ВОЙТИ</button>
           </form>
         </div>
         <span>Нет аккаунта?</span>

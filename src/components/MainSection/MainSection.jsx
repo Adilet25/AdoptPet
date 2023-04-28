@@ -5,12 +5,12 @@ import { useProducts } from "../../contexts/ProductContextProvider";
 import testimg from "../../assets/62b4b33cc9344e15555b8a7ce831a090 (1).jpg";
 
 const MainSection = () => {
-  // const { products, getProducts } = useProducts();
+  const { products, getProducts } = useProducts();
   const navigate = useNavigate("");
 
-  // useEffect(() => {
-  //   getProducts();
-  // }, []);
+  useEffect(() => {
+    getProducts();
+  }, []);
   const PRODUCTS = [
     {
       title: "Собака",
@@ -92,8 +92,8 @@ const MainSection = () => {
             />
           ))}
           {/* ) : ( */}
-          {/* <h3>Loading...</h3> */}
-          {/* )} */}
+          {/* <h3>Loading...</h3>
+          )} */}
         </div>
         {/* <Card /> */}
       </div>

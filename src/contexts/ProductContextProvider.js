@@ -24,7 +24,7 @@ const reducer = (state = INIT_STATE, action) => {
 
 const ProductContextProvider = ({ children }) => {
   const [searchInp, setSearchInp] = useState(false);
-  const API = "https://zoonet.onrender.com/api/v1";
+  const API = "https://zoonet-dpu6.onrender.com/api/v1";
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
 
   const navigate = useNavigate();

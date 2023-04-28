@@ -41,6 +41,11 @@ const MainRoutes = () => {
       element: <MapSection />,
       id: 5,
     },
+    // {
+    //   link: "/profile",
+    //   element: <Prodile />,
+    //   id: 5,
+    // },
   ];
 
   return (

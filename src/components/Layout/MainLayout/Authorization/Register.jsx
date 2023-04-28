@@ -83,7 +83,7 @@ const Register = () => {
                 onChange={(e) => setCode(e.target.value)}
               /> */}
 
-          <button>ЗАРЕГИСТРИРОВАТЬСЯ</button>
+          <button onClick={() => navigate("/login")}>ЗАРЕГИСТРИРОВАТЬСЯ</button>
         </form>
         <span>Есть аккаунт?</span>
         <a href="#" className="mb-5" onClick={() => navigate("/login")}>

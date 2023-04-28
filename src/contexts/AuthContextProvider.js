@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { createContext, useContext, useReducer, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const API = "https://zoonet.onrender.com/api/v1";
+const API = "https://zoonet-dpu6.onrender.com/api/v1";
 
 export const authContext = createContext();
 export const useAuth = () => useContext(authContext);
