@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import OTPInput from "react-otp-input";
 import PhoneInput from "react-phone-input-2";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../../../contexts/AuthContextProvider";
+import { useAuth } from "../../../../contexts/AuthContextProvider";
 import "react-phone-input-2/lib/style.css";
 import { TextField } from "@mui/material";
-
+import logo from "../Authorization/auth-image/zoonet-logo.png";
 const Register = () => {
   const { handleRegister, showOTP, handleActivate, codes } = useAuth();
 
@@ -34,12 +34,11 @@ const Register = () => {
   }
 
   return (
-    <div className="register-container">
-      <div>
-        <form
-          className="flex flex-col  items-center gap-4"
-          action="submit"
-          onSubmit={handleSave}>
+    <div className="flex justify-center items-center mt-28">
+      <div className="register-container flex h-[40vmax] fixed z-10 backdrop-opacity-50">
+        <img className="register-icon mt-5" src={logo} alt="" />
+        <span className="register-title">Регистрация</span>
+        <form action="submit" onSubmit={handleSave}>
           <TextField
             label="Ваше имя"
             onChange={(e) => setName(e.target.value)}
@@ -52,10 +51,10 @@ const Register = () => {
           />
           <span className="phone">
             <PhoneInput
+              className="register-phone-input"
               country={"kg"}
               value={phoneNumber}
               onChange={setPhoneNumber}
-              className="inp-phone"
             />
           </span>
           <TextField
@@ -76,18 +75,19 @@ const Register = () => {
                 placeholder='code'
                 autoFocus
                 numInputs={4}
-            renderInput={(codes) => <input {...codes} />}/> */}
+              renderInput={(codes) => <input {...codes} />}/> */}
 
           {/* <input 
                 type="number"  
                 value={code}
                 onChange={(e) => setCode(e.target.value)}
-            /> */}
+              /> */}
 
-          <button>Sign up</button>
+          <button>ЗАРЕГИСТРИРОВАТЬСЯ</button>
         </form>
-        <a href="#" onClick={() => navigate("/login")}>
-          Have account? Login here
+        <span>Есть аккаунт?</span>
+        <a href="#" className="mb-5" onClick={() => navigate("/login")}>
+          Войти
         </a>
       </div>
     </div>

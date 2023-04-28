@@ -9,10 +9,10 @@ import test from "../../../../assets/test-picture.jpg";
 import Mail from "../../../../assets/mail.png";
 import Price from "../../../../assets/price.png";
 
-export default function ImgMediaCard({ key, item }) {
-  React.useEffect(() => {
-    console.log(item);
-  }, []);
+export default function ImgMediaCard({ key, title, cost, desc }) {
+  // React.useEffect(() => {
+  //   console.log(item);
+  // }, []);
   return (
     <Card
       style={{ border: "none", boxShadow: "none" }}
@@ -27,19 +27,16 @@ export default function ImgMediaCard({ key, item }) {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          lflflfl
+          {title}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
-          laudantium velit asperiores esse! Est error animi quisquam, dolorum,
-          tempora, praesentium minima labore enim autem fugit cumque nisi quos
-          iure minus!
+          {desc}
         </Typography>
       </CardContent>
       <CardActions>
         <img className="w-4 ml-1" src={Price} alt="" />
         <p className="font-mono text-base leading-4 not-italic font-bold ">
-          130000
+          {cost}
         </p>
         <img className="cursor-pointer pl-28" src={Mail} alt="" />
       </CardActions>

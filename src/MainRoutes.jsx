@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Login from "./components/Layout/MainLayout/Login";
-import Register from "./components/Layout/MainLayout/Register";
+import Login from "./components/Layout/MainLayout/Authorization/Login";
+import Register from "./components/Layout/MainLayout/Authorization/Register";
 import HomePage from "./pages/HomePage";
 import AddProduct from "./components/AddProduct/AddProduct";
 import MapSection from "./components/MapSection/MapSection";

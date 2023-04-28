@@ -230,7 +230,7 @@ export default function PrimarySearchAppBar() {
                   {/* </div> */}
                   {/* </Badge> */}
                 </IconButton>
-                <IconButton
+                {/* <IconButton
                   size="large"
                   edge="end"
                   aria-label="account of current user"
@@ -239,7 +239,19 @@ export default function PrimarySearchAppBar() {
                   onClick={handleProfileMenuOpen}
                   color="inherit">
                   <img src={Profile} alt="" />
-                </IconButton>
+                </IconButton> */}
+                {/* <div className="flex justify-between w-[15vmax]"> */}
+                <button
+                  onClick={() => navigate("/login")}
+                  className="outline outline-black outline-2 hover:bg-black ease-in-out hover:text-white duration-300 px-4 py-1 rounded-md mr-2">
+                  Войти
+                </button>
+                <button
+                  onClick={() => navigate("/register")}
+                  className="outline outline-ouryellow outline-2 hover:bg-ouryellow ease-in-out duration-300 px-4 py-1 rounded-md">
+                  Зарегистрироваться
+                </button>
+                {/* </div> */}
               </Box>
               <Box sx={{ display: { xs: "flex", md: "none" } }}>
                 <IconButton
