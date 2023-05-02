@@ -1,0 +1,40 @@
+/* @import url("~leaflet/dist/leaflet.css"); */
+
+.select-wrapper select {
+  /* -webkit-appearance: none; */
+  padding: 8px 30px 8px 8px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+}
+/* .select-wrapper {
+  position: relative;
+} */
+
+.select-wrapper svg {
+  width: 13.33px;
+  height: 6.67px;
+  position: absolute;
+  right: 19px;
+  top: 29.33px;
+  transition: 0.5s;
+}
+
+/* select.minimal {
+  background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%);
+  background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+select.minimal:focus {
+  background-image: linear-gradient(45deg, rgb(0, 0, 0) 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, rgb(0, 0, 0) 50%);
+  background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em,
+    calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+  border-color: rgb(0, 0, 0);
+  outline: 0;
+} */
